@@ -1,8 +1,191 @@
 <html>
-  <head>
-    <title>Links</title>
-  </head>
-  <body>
-    Bye!
-  </body>
-</html>
+<head>
+<link rel="shortcut icon" href="http://www.k313.com/ChainLink.ico" />
+<title>Links</title>
+<style type="text/css">
+body
+{
+font-family:"arial";
+background-color: #eeeeee;
+}
+div.group
+{
+display: none;
+float: left;
+}
+div.arrow
+{
+float: right;
+font-size:16pt;
+font-weight:bold;
+}
+div.link
+{
+cursor:pointer;
+margin-top:1px;
+margin-right:3px;
+float:left;
+height:25px;
+width:120px;
+padding:10px;
+background-color:#ffffff;
+border-radius:15px;
+}
+div.category
+{
+clear:both;
+font-weight:bold;
+float: left;
+margin-top:1px;
+margin-right:3px;
+height:25px;
+width:120px;
+padding:10px;
+color:#ffffff;
+background-color:#009900;
+border-radius:15px;
+}
+div.more
+{
+cursor:pointer;
+margin-top:1px;
+margin-right:3px;
+float:left;
+height:25px;
+padding:10px;
+font-weight:bold;
+width:30px;
+color:#000000;
+background-color:#ff0000;
+border-radius:15px;
+}
+</style>
+<script type="text/javascript">
+function togglegroup(group) {
+	divelement = document.getElementById(group)
+    divdisplay = divelement.style.display;
+
+	// find arrow div
+	
+	arrowDiv = document.getElementById(group + '.arrow');
+
+    if (divdisplay.toLowerCase()=="none" || divdisplay == "")
+    {
+		divelement.style.display = 'block';
+		arrowDiv.innerHTML = "<";
+	} else {
+		divelement.style.display = 'none';
+		arrowDiv.innerHTML = ">";
+	}
+}
+</script>
+</head>
+<body>
+<div class="category">Kayaking</div>
+<div class="link" onclick="window.open('http://www.ukriversguidebook.co.uk/forum/');">UKRSGB</div>
+<div class="link" onclick="window.open('http://www.cbolton.co.uk/nwsk/index.php');">NWSK</div>
+<div class="link" onclick="window.open('http://www.k313.com/madcc/index.php');">MADCC Forum</div>
+<div class="link" onclick="window.open('http://madcc.btck.co.uk/');">MADCC website</div>
+<div class="link" onclick="window.open('http://jbkayaklog.blogspot.com/');">My Blog</div>
+<div class="more" onclick="togglegroup('kayaking');">&nbsp<div id="kayaking.arrow" class="arrow">></div></div>
+<div class="group" id="kayaking">
+<div class="link" onclick="window.open('http://www.metoffice.gov.uk/weather/marine/');">MetOffice Marine</div>
+<div class="link" onclick="window.open('http://easytide.ukho.gov.uk/EasyTide/EasyTide/ShowPrediction.aspx?PortID=0478&PredictionLength=7#DaylightSavingWarning');">Holyhead tides</div>
+</div>
+<div class="category">News</div>
+<div class="link" onclick="window.open('http://www.bbc.co.uk/');">BBC News</div>
+<div class="link" onclick="window.open('http://www.guardian.co.uk/');">Guardian</div>
+<div class="link" onclick="window.open('http://www.theregister.co.uk/');">The Register</div>
+<div class="link" onclick="window.open('http://www.zdnet.co.uk/');">ZDNet</div>
+<!-- <div class="more" onclick="togglegroup('news');">&nbsp<div id="news.arrow" class="arrow">></div></div>
+<div class="group" id="news">
+</div> -->
+<div class="category">Social</div>
+<div class="link" onclick="window.open('http://www.facebook.com/');">Facebook</div>
+<div class="link" onclick="window.open('http://m.facebook.com/');">m.Facebook</div>
+<div class="link" onclick="window.open('http://www.linkedin.com/home');">LinkedIn</div>
+<!-- <div class="more" onclick="togglegroup('social');">&nbsp<div id="social.arrow" class="arrow">></div></div>
+<div class="group" id="social">
+</div> -->
+<div class="category">Web Design</div>
+<div class="link" onclick="window.open('http://www.w3schools.com/HTML/');">W3shools HTML</div>
+<div class="link" onclick="window.open('http://www.w3schools.com/css/');">W3shools CSS</div>
+<div class="link" onclick="window.open('http://www.k313.com');">K313</div>
+<div class="link" onclick="window.open('http://www.powweb.com');">Powweb</div>
+<div class="link" onclick="window.open('http://ec2-54-148-244-13.us-west-2.compute.amazonaws.com:1880/');">AWS NodeRed</div>
+<div class="more" onclick="togglegroup('webDesign');">&nbsp<div id="webDesign.arrow" class="arrow">></div></div>
+<div class="group" id="webDesign">
+<div class="link" onclick="window.open('http://www.k313.com/easyjs/easyjs.html');">easyjs</div>
+<div class="link" onclick="window.open('http://www.123-reg.co.uk');">123 reg</div>
+<div class="link" onclick="window.open('http://www.raspberrypi.org');">Raspberry Pi</div>
+<div class="link" onclick="window.open('http://www.raspberrypi.com');">Raspberry Pi Shop</div>
+</div>
+<div class="category">Photography</div>
+<div class="link" onclick="window.open('http://www.flickr.com/');">Flickr</div>
+<div class="link" onclick="window.open('http://rainowphotogroup.wordpress.com/');">Rainow Photo Site</div>
+<div class="link" onclick="window.open('http://k313.com/rainowphoto/');">Rainow Photo Forum</div>
+<!-- <div class="more" onclick="togglegroup('photography');">&nbsp<div id="photography.arrow" class="arrow">></div></div>
+<div class="group" id="photography">
+</div> -->
+<div class="category">Football</div>
+<div class="link" onclick="window.open('http://fantasy.premierleague.com/my-team/');">FPL</div>
+<div class="link" onclick="window.open('http://news.bbc.co.uk/sport1/hi/football/default.stm');">BBC Football</div>
+<!-- <div class="more" onclick="togglegroup('football');">&nbsp<div id="football.arrow" class="arrow">></div></div>
+<div class="group" id="football">
+</div> -->
+<div class="category">Maps</div>
+<div class="link" onclick="window.open('http://www.k313.com/maps/map7.html');">JB maps</div>
+<div class="link" onclick="window.open('http://maps.google.co.uk');">Google Maps</div>
+<div class="link" onclick="window.open('http://www.streetmap.co.uk/');">Streetmap</div>
+<div class="link" onclick="window.open('http://www.ordnancesurvey.co.uk/business-and-government/help-and-support/web-services/os-openspace/api/index.html');">OpenSpace API</div>
+<!-- <div class="more" onclick="togglegroup('maps');">&nbsp<div id="maps.arrow" class="arrow">></div></div>
+<div class="group" id="maps">
+</div> -->
+<div class="category">Weather</div>
+<div class="link" onclick="window.open('http://www.metoffice.gov.uk/weather/uk/uk_forecast_weather.html');">Met Office</div>
+<div class="link" onclick="window.open('http://www.bbc.co.uk/weather/');">BBC Weather</div>
+<div class="link" onclick="window.open('http://www.wetterzentrale.de/topkarten/fsavneur.html');">Wetterzentrale</div>
+<div class="link" onclick="window.open('http://www.mwis.org.uk/');">MWIS</div>
+<div class="link" onclick="window.open('http://yr.no');">yr.no</div>
+<div class="more" onclick="togglegroup('weather');">&nbsp<div id="weather.arrow" class="arrow">></div></div>
+<div class="group" id="weather">
+<div class="link" onclick="window.open('http://www.netweather.tv/');">Netweather</div>
+</div>
+<div class="category">Shopping</div>
+<div class="link" onclick="window.open('http://www.johnlewis.com/');">John Lewis</div>
+<div class="link" onclick="window.open('http://www.amazon.co.uk');">Amazon</div>
+<div class="link" onclick="window.open('http://www.ebay.co.uk');">Ebay</div>
+<div class="link" onclick="window.open('http://www.microdirect.co.uk');">Micro Direct</div>
+<!-- <div class="more" onclick="togglegroup('shopping');">&nbsp<div id="shopping.arrow" class="arrow">></div></div>
+<div class="group" id="shopping">
+</div> -->
+<div class="category">TV &amp Radio</div>
+<div class="link" onclick="window.open('http://www.bbc.co.uk/iplayer');">BBC iplayer</div>
+<div class="link" onclick="window.open('http://www.radiotimes.com/tv/tv-listings');">Radio Times</div>
+<div class="link" onclick="window.open('http://www.digitalspy.co.uk/forums/forumdisplay.php?f=142');">Digitalspy</div>
+<div class="link" onclick="window.open('http://www.bbc.co.uk/radio/');">BBC Radio</div>
+<!-- <div class="more" onclick="togglegroup('tvRadio');">&nbsp<div id="tvRadio.arrow" class="arrow">></div></div>
+<div class="group" id="tvRadio">
+</div> -->
+<div class="category">Mail etc</div>
+<div class="link" onclick="window.open('http://mail.convergys.com');">Convergys</div>
+<div class="link" onclick="window.open('https://webmail.plus.net/');">Plusnet</div>
+<div class="link" onclick="window.open('https://www.google.com/calendar/render?tab=wc');">Google Calendar</div>
+<!-- <div class="more" onclick="togglegroup('webmail');">&nbsp<div id="webmail.arrow" class="arrow">></div></div>
+<div class="group" id="webmail">
+</div> -->
+<div class="category">Skiing</div>
+<div class="link" onclick="window.open('http://www.winterhighland.info/');">Winterhighland</div>
+<div class="link" onclick="window.open('http://www.snow-forecast.com/maps/static/uk/full');">Snow Forecast</div>
+<!-- <div class="more" onclick="togglegroup('skiing');">&nbsp<div id="skiing.arrow" class="arrow">></div></div>
+<div class="group" id="skiing">
+</div> -->
+<div class="category">Running</div>
+<div class="link" onclick="window.open('http://www.macclesfield-harriers.co.uk/index.php');">Macc Harriers</div>
+<div class="link" onclick="window.open('http://www.k313.com/mhforum3/index.php');">MH Forum</div>
+<div class="link" onclick="window.open('http://www.macclesfield-harriers.co.uk/administrator/index.php');">MH Admin</div>
+<!-- <div class="more" onclick="togglegroup('running');">&nbsp<div id="running.arrow" class="arrow">></div></div>
+<div class="group" id="running">
+</div> -->
+</body>
+
